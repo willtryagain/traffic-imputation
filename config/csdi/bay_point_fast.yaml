@@ -1,0 +1,44 @@
+dataset_name: "bay_point"
+window: 24
+adj_threshold: 0.1
+
+detrend: False
+scale: True
+scaling_axis: "global" # ['channels', 'global']
+scaled_target: True
+
+epochs: 400
+batch_size: 8
+aggregate_by: ["mean"]
+lr: 1.0e-2
+workers: 36
+
+model_name: "csdi"
+pred_loss_weight: 1
+
+d_hidden: 64
+d_emb: 8
+d_ff: 64
+ff_dropout: 0
+kernel_size: 2
+decoder_order: 1
+n_layers: 1
+layer_norm: false
+merge: "mlp"
+
+n_samples: 1
+diffusion:
+  layers: 4
+  channels: 64
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 50
+  schedule: "quad"
+
+model:
+  is_unconditional: 0
+  timeemb: 128
+  featureemb: 16
+  target_strategy: "random"

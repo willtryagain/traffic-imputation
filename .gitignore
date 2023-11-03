@@ -1,0 +1,12 @@
+*.DS_STORE
+datasets/
+logs/
+__pycache__/
+wandb/
+*.py[cod]
+lightning_logs/
+tmp/
+xmt.ipynb
+train.sh
+*.sh
+*.ipynb
