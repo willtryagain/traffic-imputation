@@ -14,6 +14,7 @@ This project is focused on traffic imputation and is based on two key research p
 - Parameter selection based on computational constraints and performance
 
 ## Data and Visuals
+Traffic evolution gif will take some time to load.
 
 - PEMS-BAY ![p](map.png)
 - Traffic Evolution ![t](traffic.gif)
