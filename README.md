@@ -8,7 +8,7 @@ This project is focused on traffic imputation and is based on two key research p
 
 ## My Contribution
 
-- Implement diffusion model (CSDI) using Pytorch lightning
+- Implement diffusion model (CSDI) using Pytorch lightning (view csdi and diffmodels in https://github.com/willtryagain/traffic-imputation/tree/main/lib/nn/models, train_csdi script)
 - Use mode-parallel training (FSDP) after manual wrapping
 - Experimentation and visualization using wandb
 - Parameter selection based on computational constraints and performance
